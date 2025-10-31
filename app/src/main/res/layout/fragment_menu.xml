@@ -5,10 +5,38 @@
     android:layout_height="match_parent"
     tools:context=".fragments.MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/top_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:src="@drawable/rostics_text_logo"
+            android:contentDescription="Логотип Rostics"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_gray_circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Профиль"
+            android:scaleType="centerInside" />
+    </LinearLayout>
 
 </FrameLayout>

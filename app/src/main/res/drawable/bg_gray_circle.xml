@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Состояние: нажато -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/> <!-- белый при нажатии -->
+        </shape>
+    </item>
+
+    <!-- Состояние по умолчанию -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#E0E0E0"/> <!-- серый по умолчанию -->
+        </shape>
+    </item>
+
+</selector>
